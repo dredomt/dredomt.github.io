@@ -1,0 +1,45 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class TestClass
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+
+        Fighter john = new Fighter("John", 25, 70, 50);
+        Fighter ed = new Fighter ("Edward", 28, 85, 65);
+        Fighter jim = new Fighter("Jim", 22, 90, 53);
+        Fighter mor = new Fighter("Moron", 27, 85, 66);
+
+        System.out.println(john);
+        System.out.println(ed);
+        System.out.println(jim);
+        System.out.println(mor);
+
+
+
+    }
+
+    public static class Fighter
+    {
+
+
+        String name;
+        int age;
+        int weight;
+        int strength;
+        public Fighter(String name, int age, int weight, int strength)
+        {
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+            this.strength = strength;
+        }
+
+
+    }
+
+
+}
